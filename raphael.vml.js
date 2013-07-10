@@ -486,7 +486,7 @@ window.Raphael && window.Raphael.vml && function(R) {
                     dx = bb.x - bbt.x,
                     dy = bb.y - bbt.y;
                 o.coordorigin = (dx * -zoom) + S + (dy * -zoom);
-                setCoords(this, 1, 1, dx, dy, 0);
+                setCoords(this, split.scalex, split.scaley, dx, dy, 0);
             } else {
                 o.style.filter = E;
                 setCoords(this, split.scalex, split.scaley, split.dx, split.dy, split.rotate);
